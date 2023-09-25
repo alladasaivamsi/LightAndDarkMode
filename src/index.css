@@ -1,13 +1,43 @@
+/*================= Root Colors =================*/
+:root {
+  --white: #fff;
+  --black: #111;
+}
+/*================= End Of Root Colors =================*/
+
+/*================= Dark Theme =================*/
+[data-theme="dark"] {
+  --white: #ffffff;
+  --black: #111;
+}
+/*================= End Of Dark Theme =================*/
+
+/*================= Light Theme =================*/
+[data-theme="light"] {
+  --white: #111;
+  --black: #fff;
+}
+/*================= End Of Light Theme =================*/
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+span {
+  font-size: 2rem;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  border-bottom: 2px solid var(--white);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
